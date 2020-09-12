@@ -9,6 +9,9 @@
 git clone git@github.com:Humsan/transmission-on-docker.git && cd transmission-on-docker/
 # according your requirement to edit config/settings.json
 mkdir ~/download
-docker run -i -t -d --name=transmission -v ./config:/etc/transmission/config -v ~/download:/download -p 9091:9091 masker/transmission:v0.2
+docker run -i -t -d --name=transmission \
+    -v ./config:/etc/transmission/config -v ~/download:/download \
+    -p 9091:9091 -p 51413:51413 -p 51413:51413/udp
+    masker/transmission:v0.2
 
 ```
