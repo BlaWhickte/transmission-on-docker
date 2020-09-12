@@ -11,7 +11,7 @@ git clone git@github.com:Humsan/transmission-on-docker.git && cd transmission-on
 mkdir ~/download
 docker run -i -t -d --name=transmission \
     -v ./config:/etc/transmission/config -v ~/download:/download \
-    -p 9091:9091 -p 51413:51413 -p 51413:51413/udp
+    -p 9091:9091 -p 51413:51413 -p 51413:51413/udp \
     masker/transmission:v0.2
 
 ```
