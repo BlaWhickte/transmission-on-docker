@@ -6,7 +6,7 @@
 
 # Usage
 ```shell
-git clone git@github.com:Humsan/transmission-on-docker.git && cd transmission-on-docker/
+git clone git@github.com:maske3/transmission-on-docker.git && cd transmission-on-docker/
 # according your requirement to edit config/settings.json
 mkdir ~/download
 docker run -i -t -d --name=transmission \
@@ -15,3 +15,4 @@ docker run -i -t -d --name=transmission \
     masker/transmission:v0.2
 
 ```
+
